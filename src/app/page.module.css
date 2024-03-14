@@ -1,0 +1,180 @@
+
+.background{
+  height: 80vh;
+  background-image: url(../../public/back4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loanBg{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+.loanBg::before{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  background-image: url(../../public/loan3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.loanBg::after{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  z-index:-1;
+  background-color: #1b1d21;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.goalBg{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+.goalBg::before{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  background-image: url(https://plus.unsplash.com/premium_photo-1682432082038-5da901b71849?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+.goalBg::after{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  z-index:-1;
+  background-color: #1b1d21;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+/* styling for sites page top background image */
+.siteBg{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.siteBg::before{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  background-image: url(../../public/loan1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+}
+.siteBg::after{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  z-index:-1;
+  background-color: #1b1d21;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.slider {
+  overflow: hidden;
+  /* width: 50vw;
+  height: 50vh; */
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 16s infinite;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+  color: white;
+  font-size: 40px;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url(../../public/services/furnitured.jpg);
+  animation-delay: -0;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url(../../public/services/township.jpg);
+  animation-delay: -4s;
+}
+  
+.slider .slide:nth-child(3) {
+  background-image: url(../../public/services/independent_home.jpg);
+  animation-delay: -8s;
+}
+  
+.slider .slide:nth-child(4) {
+  background-image: url(../../public/services/roads.jpg);
+  animation-delay: -12s;
+}
+
+.slider .slide:nth-child(5) {
+  background-image: url(../../public/services/furniture2.jpg);
+  animation-delay: -16s;
+}
+
+@keyframes slide {
+  0%, 15%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
