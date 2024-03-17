@@ -69,19 +69,19 @@ export default function Home() {
         <hr className="bg-black w-full h-0.5 my-10 opacity-5"></hr>
         <div className="flex justify-around mt-16 sm:flex-col sm:mt-4 sm:gap-4">
           <div className="sm:flex flex-col items-center">
-            <Image src="./homeLogo2.png" alt="not found" width={100} height={80}/>
+            <Image src="/homeLogo2.png" alt="not found" width={100} height={80}/>
             <h2 className="my-4">Excellent Reputation</h2>
             <p className="text-light-gray">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
           </div>
           <hr className="bg-black h-32 w-px opacity-5 sm:hidden"></hr>
           <div className="sm:flex flex-col items-center">
-            <Image src="./agentLogo.png" alt="not found" width={100} height={80}/>
+            <Image src="/agentLogo.png" alt="not found" width={100} height={80}/>
             <h2 className="my-4">Best Local Agents</h2>
             <p className="text-light-gray">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
           </div>
           <hr className="bg-black h-32 w-px opacity-5 sm:hidden"></hr>
           <div className="sm:flex flex-col items-center">
-            <Image src="./service.png" alt="not found" width={100} height={80}/>
+            <Image src="/service.png" alt="not found" width={100} height={80}/>
             <h2 className="my-4">Personalized Service</h2>
             <p className="text-light-gray">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
           </div>

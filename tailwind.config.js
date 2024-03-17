@@ -13,6 +13,12 @@ module.exports = {
         'light-gray':"#93959e",
         'vlight-blue':"#e5f8ed"
       },
+      width: {
+        '128': '32rem',
+        '100': '25rem',
+        '120' :'30rem',
+        '112' : '28rem',
+      },
       boxShadow: {
         '3xl': '-5px 10px 10px  rgba(0, 0, 0, 0.2)',
       },
