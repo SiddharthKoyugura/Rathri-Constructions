@@ -19,7 +19,6 @@ export default async function Page() {
         <div className='flex sm:flex-col gap-10  w-full p-10 sm:p-4'>
           {data.map((item:DataItem)=>{
             return(
-              //<li key={item.id}>{item.name}</li>
               <div key={item.id} className='shadow-3xl rounded-xl'>
                 <Image src={item.url} alt='not found' width={460} height={280} className='sm:block'/>
                 <div className='flex flex-col gap-2 m-5'>

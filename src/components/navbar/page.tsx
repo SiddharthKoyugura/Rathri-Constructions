@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUser} from '@fortawesome/free-solid-svg-icons'
-export default function Navbar()
-{
-    return(
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { UserButton } from "@clerk/nextjs";
+
+export default function Navbar() {
+    return (
         <div className="flex bg-slate-100 justify-around">
             <div className="flex my-5">
                 <Image src="/Logo.png" alt="My Image" width={250} height={170} />
@@ -29,8 +30,14 @@ export default function Navbar()
                 </select>
             </div>
             <div className="flex flex-row items-center gap-3 sm:hidden">
-                <div><FontAwesomeIcon icon={faUser} style={{width:"25px"}}/></div>
-                <div>Sign-in</div>
+                <div><FontAwesomeIcon icon={faUser} style={{ width: "25px" }} /></div>
+                {/* <div>Sign-in</div> */}
+                {/* <UserButton afterSignOutUrl="sign-in" /> */}
+                <Link
+                    href="/sign-in"
+                >
+                    Sign in
+                </Link>
             </div>
         </div>
     )

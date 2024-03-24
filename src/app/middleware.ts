@@ -1,16 +1,27 @@
 import { authMiddleware } from "@clerk/nextjs";
- 
+import { NextResponse } from "next/server";
+
 export default authMiddleware({
-  // Routes that can be accessed while signed out
-//   publicRoutes: ['/anyone-can-visit-this-route'],
-  // Routes that can always be accessed, and have
-  // no authentication information
-//   ignoredRoutes: ['/no-auth-in-this-route'],
+  async afterAuth(auth, req) {
+    const isAuthenticated = !!auth.userId;
+
+    if (isAuthenticated) {
+      return NextResponse.redirect(new URL("/", req.url));
+    }
+
+  },
 });
- 
+
 export const config = {
-  // Protects all routes, including api/trpc.
-  // See https://clerk.com/docs/references/nextjs/auth-middleware
-  // for more information about configuring your Middleware
-  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: [
+    "/((?!.*\\..*|_next).*)",
+    "/",
+    "/contact*",
+    "/sign-in",
+    "/sign-up",
+    "/services",
+    "/sites",
+    "/about-us",
+    "/(api|trpc)(.*)",
+  ],
 };
