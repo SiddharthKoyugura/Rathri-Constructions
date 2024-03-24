@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name":"Luxury Villa with a pool",
+        "url":"https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "cost":140000,
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "id":2,
+        "name":"Villa on Grand Avenue",
+        "url":"https://azim.commonsupport.com/Realshed/assets/images/feature/feature-1.jpg",
+        "cost":140000,
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "id":3,
+        "name":"Contemporary Apartment",
+        "url":"https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "cost":140000,
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]
