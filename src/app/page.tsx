@@ -1,7 +1,7 @@
 import Image from "next/image";
 import bgImg from "../../public/back2.jpg";
 import styles from './page.module.css';
-import Featured from '../../components/Featured/page';
+import Featured from '../components/Featured/page';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookF, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 

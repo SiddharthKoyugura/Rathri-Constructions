@@ -1,9 +1,9 @@
 import React from 'react';
-import { promises as fs } from 'fs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faIndianRupeeSign} from '@fortawesome/free-solid-svg-icons';
 import {faHeart } from '@fortawesome/free-regular-svg-icons';
-// import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode } from 'react';
+import Image from 'next/image';
+import data from "../Featured.json";
 
 interface DataItem {
   id: number;
@@ -14,10 +14,6 @@ interface DataItem {
 }
 
 export default async function Page() {
-  const file = await fs.readFile(process.cwd() + '/components/Featured.json', 'utf8');
-  //console.log(process.cwd());
-  const data:DataItem[] = JSON.parse(file);
-
   
     return(
         <div className='flex sm:flex-col gap-10  w-full p-10 sm:p-4'>
@@ -25,7 +21,7 @@ export default async function Page() {
             return(
               //<li key={item.id}>{item.name}</li>
               <div key={item.id} className='shadow-3xl rounded-xl'>
-                <img src={item.url} alt='not found' style={{width:"460px", height:"280px"}} className='sm:block'/>
+                <Image src={item.url} alt='not found' width={460} height={280} className='sm:block'/>
                 <div className='flex flex-col gap-2 m-5'>
                   <h1 className='font-bold text-gray-800'>{item.name}</h1>
                   <p className='text-light-gray'>starts from</p>
