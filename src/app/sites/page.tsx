@@ -1,6 +1,6 @@
 import styles from '../page.module.css';
 import Image from 'next/image';
-import SiteInfo from '../../../components/SitesComp/page';
+import SiteInfo from '../../../components/sitesComp/page';
 export default function sites()
 {
     return(
@@ -28,9 +28,9 @@ export default function sites()
             </div> */}
             <div className='text-center mt-4'><h1 className='text-2xl font-semibold'>Our Sites</h1></div>
             <div className='p-16 flex items-center gap-10 sm:flex-col sm:p-4'>
-                <div className='w-80 flex flex-col gap-6'>
+                <div className='w-80 flex flex-col gap-6 flex-shrink'>
                     <div className='property p-6 flex flex-col gap-2 shadow-lg'>
-                        <h2>Property</h2>
+                        <h2 className='text-real-green'>Property</h2>
                         <select name="property" id="property" className='w-68 h-12 rounded-lg border-2 border-gray-300 flex shrink text-gray-500'>
                             <option value="" className='border-2 border-gray-300 min-h-10'>All Type</option>
                             <option value="">Villa</option>
@@ -65,14 +65,14 @@ export default function sites()
                     </div>
 
                     <div className='status p-6 flex flex-col gap-2 shadow-xl'>
-                        <h2>Status of Property</h2>
+                        <h2 className='text-real-green'>Status of Property</h2>
                         <ul className='list-disc text-gray-500 flex flex-col gap-3 list-inside'>
                             <li className='hover:text-real-green hover:cursor-pointer'>For Rent</li>
                             <li className='hover:text-real-green hover:cursor-pointer'>For Sale</li>
                         </ul>
                     </div>
                     <div className='amenities p-6 flex flex-col gap-2 shadow-xl'>
-                        <h2>Ameneties</h2>
+                        <h2 className='text-real-green'>Ameneties</h2>
                         <ul className='list-disc text-gray-500 flex flex-col gap-3 list-inside'>
                             <li className='hover:text-real-green hover:cursor-pointer'>Air Conditioning</li>
                             <li className='hover:text-real-green hover:cursor-pointer'>Central Heating</li>

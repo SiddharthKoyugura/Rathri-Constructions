@@ -44,7 +44,7 @@ export default async function Page()
                                 <div className="flex gap-2 text-light-gray"><FontAwesomeIcon icon={faSquarespace} style={{width:"25px", height:"25px"}}/> 600 sqft</div>
                             </div>
                             <div className="flex justify-between">
-                                <div className="text-light-gray border-2 border-gray-300 p-2 rounded-md">See Details</div>
+                                <div className="text-light-gray border-2 border-gray-300 p-2 rounded-md hover:border-real-green hover:text-real-green hover:cursor-pointer">See Details</div>
                                 <div className="text-light-gray flex gap-8">
                                     <FontAwesomeIcon icon={faShuffle} style={{width:"25px", height:"25px"}} />
                                     <FontAwesomeIcon icon={faHeart} style={{width:"25px", height:"25px"}} />

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLocationDot, faAddressBook, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-export default function Footer()
+export default function footer()
 {
     return(
         <div className="flex justify-center bg-footer-black gap-16 text-white p-20 sm:flex-col sm:p-3">
@@ -48,9 +48,9 @@ export default function Footer()
                     <FontAwesomeIcon icon={faAddressBook} style={{width:"20px", color:"green"}} />
                     +91 9876543201
                 </p>
-                <p className="flex gap-2 text-light-gray flex-shrink">
+                <p className="flex gap-3 text-light-gray flex-shrink">
                     <FontAwesomeIcon icon={faEnvelope} style={{width:"20px", color:"green"}} />
-                    rathriconstructions@gmail.com
+                    <div className='flex flex-shrink'>rathriconstructions@gmail.com</div>
                 </p>
             </div>
         </div>

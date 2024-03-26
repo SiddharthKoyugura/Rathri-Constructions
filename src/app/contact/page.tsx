@@ -16,7 +16,7 @@ export default function contact()
                     <Image src="/contactus.jpg" alt="not found" width={550} height={350}/>
                 </div>
             </div>
-            <div>another</div>
+            {/* <div>another</div> */}
         </div>
         
     )
