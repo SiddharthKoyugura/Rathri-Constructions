@@ -54,12 +54,3 @@ export default async function Page()
         </div>
     )
 }
-
-// export default function page()
-// {
-//     return(
-//         <div>
-//             <h1>Heading1</h1>
-//         </div>
-//     )
-// }

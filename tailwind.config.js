@@ -21,6 +21,7 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '-5px 10px 10px  rgba(0, 0, 0, 0.2)',
+        '4xl':'2px 5px 7px 2px rgba(0,0,0,.3)'
       },
       screens: {
         '2xl': {'max': '1535px'},

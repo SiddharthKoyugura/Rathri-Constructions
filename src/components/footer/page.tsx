@@ -48,9 +48,9 @@ export default function footer()
                     <FontAwesomeIcon icon={faAddressBook} style={{width:"20px", color:"green"}} />
                     +91 9876543201
                 </p>
-                <p className="flex gap-3 text-light-gray flex-shrink">
+                <p className="flex gap-3 text-light-gray ">
                     <FontAwesomeIcon icon={faEnvelope} style={{width:"20px", color:"green"}} />
-                    <div className='flex flex-shrink'>rathriconstructions@gmail.com</div>
+                    <div className='flex flex-wrap'><p>rathriconstructions@gmail.com</p></div>
                 </p>
             </div>
         </div>
