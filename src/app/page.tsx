@@ -3,6 +3,9 @@ import styles from './page.module.css';
 import Featured from '../components/Featured/page';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookF, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faMagnifyingGlass, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faCompass } from '@fortawesome/free-regular-svg-icons';
+
 
 export default function Home() {
   return (
@@ -11,31 +14,36 @@ export default function Home() {
         <div className="text-4xl text-white text-center">Welcome to Rathri constructions</div>  
       </div>      
       <div className="flex justify-center -mt-32 outerDiv">
-        <div className="w-fill">
-
-          <div className="flex justify-center gap-2">
-            <button className="w-20 h-10 rounded-lg hover:text-white transition ease-in-out delay-150 bg-real-green hover:-translate-y-1 hover:scale-110 hover:bg-stone-800 duration-300 ...">Buy</button>
-            <button className="w-20 h-10 rounded-lg hover:text-white transition ease-in-out delay-150 bg-real-green hover:-translate-y-1 hover:scale-110 hover:bg-stone-800 duration-300 ...">Rent</button>
+        <div className="w-4/5">
+          <div className="flex justify-center">
+            <button className="w-24 h-10 border-r-2 border-slate-500 text-black text-xl rounded-t-sm hover:text-white transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Buy</button>
+            <button className="w-24 h-10 rounded-t-sm hover:text-white text-black text-xl transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Rent</button>
           </div>
 
-          <div className=" flex gap-10 justify-between p-4 bg-white rounded-lg shadow-2xl sm:flex-col sm:gap-3">
-            <div className=" h-20 flex flex-col">
+          <div className=" flex gap-10 text-lg justify-between p-4 bg-white rounded-lg shadow-2xl sm:flex-col sm:gap-3">
+            <div className="w-1/4 h-20 flex flex-col sm:w-full">
               <p>search property</p>
-              <input type="search" placeholder="search" className="h-10 border-2 border-gray-300 flex shrink"/>
+              <div className="flex gap-3 px-2 items-center border-2 border-gray-300">
+                <FontAwesomeIcon icon={faMagnifyingGlass} style={{width:"20px", height:"20px", color:"gray"}} />
+                <input type="search" placeholder="search" className="h-10 flex shrink"/>
+              </div>  
             </div>
-            <div className=" h-20 flex flex-col">
+            <div className="w-1/4 h-20 flex flex-col sm:w-full">
               <p>location</p>
-              <select className="w-56 h-10 border-2 border-gray-300 flex shrink">
-                <option>input location</option>
-                <option>Ghatkesar</option>
-                <option>Medipally</option>
-                <option>Narepally</option>
-                <option>Yamnampet</option>
-              </select>
+              <div className="flex gap-3 px-2 items-center border-2 border-gray-300 shrink">
+                <FontAwesomeIcon icon={faCompass} style={{width:20, height:20, color:"gray"}} />
+                <select className="h-10 w-full flex shrink sm:w-full">
+                  <option>input location</option>
+                  <option>Ghatkesar</option>
+                  <option>Medipally</option>
+                  <option>Narepally</option>
+                  <option>Yamnampet</option>
+                </select>
+              </div> 
             </div>
-            <div className="h-20 flex flex-col">
+            <div className="w-1/4 h-20 flex flex-col sm:w-full">
               <p>property type</p>
-              <select name="" id="" className="w-56 h-10 border-2 border-gray-300 flex shrink">
+              <select name="" id="" className="h-10 border-2 border-gray-300 flex shrink">
                 <option>All types</option>
                 <option value="">Luxary</option>
                 <option value="">Classic</option>
@@ -43,13 +51,18 @@ export default function Home() {
                 <option value="">Modern</option>
               </select>
             </div>
+
+            <div className="w-1/4 h-20 flex items-center gap-10 sm:w-full">
+              <button className="border border-gray-300 h-10 w-1/3 mt-4">Search</button>
+              <div>Advanced Search</div>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="p-20 w-full sm:p-4">
         <div className="titles" >
-          <h1>Features</h1>
+          <h1 className="text-xl">Features</h1>
           <h2 className="text-4xl text-real-green">Featured Property</h2>
         </div>
         <Featured />  
@@ -63,26 +76,26 @@ export default function Home() {
       </div>  
       
       <div className="bg-vlight-blue p-20 sm:p-4">
-        <h3>Why Choose Us?</h3>
-        <h1>Reasons To Choose Us</h1>
+        <h3 className="text-2xl">Why Choose Us?</h3>
+        <h1 className="text-3xl">Reasons To Choose Us</h1>
         <hr className="bg-black w-full h-0.5 my-10 opacity-5"></hr>
         <div className="flex justify-around mt-16 sm:flex-col sm:mt-4 sm:gap-4">
           <div className="sm:flex flex-col items-center">
             <Image src="/homeLogo2.png" alt="not found" width={100} height={80}/>
-            <h2 className="my-4">Excellent Reputation</h2>
-            <p className="text-light-gray">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
+            <h2 className="my-4 text-xl">Excellent Reputation</h2>
+            <p className="text-light-gray sm:text-center">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
           </div>
           <hr className="bg-black h-32 w-px opacity-5 sm:hidden"></hr>
           <div className="sm:flex flex-col items-center">
             <Image src="/agentLogo.png" alt="not found" width={100} height={80}/>
-            <h2 className="my-4">Best Local Agents</h2>
-            <p className="text-light-gray">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
+            <h2 className="my-4 text-xl">Best Local Agents</h2>
+            <p className="text-light-gray sm:text-center">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
           </div>
           <hr className="bg-black h-32 w-px opacity-5 sm:hidden"></hr>
           <div className="sm:flex flex-col items-center">
             <Image src="/service.png" alt="not found" width={100} height={80}/>
-            <h2 className="my-4">Personalized Service</h2>
-            <p className="text-light-gray">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
+            <h2 className="my-4 text-xl">Personalized Service</h2>
+            <p className="text-light-gray sm:text-center">Lorem ipsum dolor sit consectetur sed<br/> eiusm tempor.</p>
           </div>
         </div>
       </div>

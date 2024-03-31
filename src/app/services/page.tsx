@@ -3,9 +3,10 @@ export default function page()
 {
     return(
         <div className="flex flex-col justify-center items-center my-4">
-            <h1 className="text-3xl font-semibold">Our Services..</h1>
+            <h1 className="text-3xl font-semibold my-10">Our Services</h1>
             <div className="flex flex-col gap-6">
-                <div className="flex justify-between gap-10 p-4 sm:flex-col flex-wrap">
+                <div className="flex flex-wrap justify-center gap-10 p-4 sm:flex-col">
+
                     <div>
                         <div className='relative w-[28rem] h-80 sm:w-full'><Image src="/services/furniture2.jpg" layout="fill" alt="not found" className="rounded-lg" /></div>
                         <div className="p-2">
@@ -28,8 +29,6 @@ export default function page()
                         </div>
                         
                     </div>
-                </div>
-                <div className="flex justify-between gap-10 p-4 sm:flex-col flex-wrap">
                     <div>
                         <div className='relative w-[28rem] h-80 sm:w-full'><Image src="/services/roads.jpg" layout="fill" alt="not found" className="rounded-lg" /></div>
                         <div className="p-2">
