@@ -1,10 +1,10 @@
 import React from "react";
-import {promises as fs} from 'fs';
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faIndianRupeeSign, faBed, faBath, faShuffle} from '@fortawesome/free-solid-svg-icons';
 import {faHeart } from '@fortawesome/free-regular-svg-icons';
 import {faSquarespace } from '@fortawesome/free-brands-svg-icons';
+import data from "../Featured.json";
 interface DataItem{
     id:number;
     name:string;
@@ -14,9 +14,6 @@ interface DataItem{
 }
 export default async function Page()
 {
-    const file = await fs.readFile(process.cwd()+'/components/Featured.json','utf-8');
-    const data:DataItem[]= JSON.parse(file);
-    //console.log(data);
     return(
         <div className='flex justify-center items-center'>
             <div className="grid gap-10 grid-cols-1">

@@ -30,7 +30,7 @@ export default function Navbar()
             </div>
             <div className="flex flex-row items-center gap-3 sm:hidden">
                 <div><FontAwesomeIcon icon={faUser} style={{width:"25px"}}/></div>
-                <div className="hover:cursor-pointer">Sign-in</div>
+                <div>Sign-in</div>
             </div>
         </div>
     )

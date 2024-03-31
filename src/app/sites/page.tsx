@@ -1,6 +1,6 @@
 import styles from '../page.module.css';
 import Image from 'next/image';
-import SiteInfo from '../../../components/sitesComp/page';
+import SiteInfo from '../../../components/SitesComp/page';
 export default function sites()
 {
     return(
