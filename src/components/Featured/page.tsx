@@ -22,7 +22,7 @@ export default async function Page() {
               <div key={item.id} className='shadow-3xl rounded-xl'>
                 <Image src={item.url} alt='not found' width={460} height={280} className='sm:block'/>
                 <div className='flex flex-col gap-2 m-5'>
-                  <h1 className='font-bold text-gray-800'>{item.name}</h1>
+                  <h1 className='font-bold text-gray-800 text-lg'>{item.name}</h1>
                   <p className='text-light-gray'>starts from</p>
                   <div className='flex justify-between'>
                     <div className='flex text-real-green font-bold'>
