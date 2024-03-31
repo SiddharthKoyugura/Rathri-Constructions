@@ -3,17 +3,15 @@ import { db } from "@/db";
 
 export async function GET(request: NextRequest, response: NextResponse) {
     const { searchParams } = new URL(request.url);
-    const userIds = searchParams.getAll("userIds");
+    const userId = searchParams.getAll("userId");
 
-    if (!userIds || !Array.isArray(userIds)) {
+    if (!userId || !Array.isArray(userId)) {
         return new NextResponse("Missing or invalid userIds", { status: 400 });
     }
 
     const user = await db.user.findMany({
         where: {
-            id: {
-                in: userIds,
-            }
+            id: userId.toString(),
         }
     });
 
