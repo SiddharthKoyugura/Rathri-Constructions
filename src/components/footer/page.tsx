@@ -45,7 +45,7 @@ export default function footer()
                 <h1 className="font-bold">Contact</h1>
                 <p className="flex gap-3 text-light-gray">
                     <div> <FontAwesomeIcon icon={faLocationDot} style={{width:"20px", color:"red"}} /> </div>
-                    <div>Flat No-20, Nagaram, ECIL, Hyderabad</div>    
+                    <div>Flat No-83 Sai dharani colony Nagaram ECIL Hyderabad</div>    
                 </p>
                 <p className="flex gap-3 text-light-gray">
                     <FontAwesomeIcon icon={faAddressBook} style={{width:"23px", color:"rgba(24, 119, 242, 1)"}} />
