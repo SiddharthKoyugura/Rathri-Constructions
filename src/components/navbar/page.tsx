@@ -13,7 +13,7 @@ export default function Navbar()
             <div className="flex my-2">
                 <Image src="/Logo.png" alt="My Image" width={200} height={170} />
             </div>
-            <div className="flex items-center text-3xl font-bold sm:hidden">
+            <div className="flex items-center text-xl font-bold sm:hidden">
                 <ul className="flex gap-12">
                     <li><Link href="/"><h3>Home</h3></Link></li>
                     <li><Link href="./sites"><h3>Sites</h3></Link></li>
