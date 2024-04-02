@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLocationDot, faAddressBook, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faYoutube, faFacebook } from '@fortawesome/free-brands-svg-icons';
+// import { Link } from 'lucide-react';
 
 export default function footer()
 {
@@ -41,16 +44,30 @@ export default function footer()
             <div className="flex flex-col gap-6">
                 <h1 className="font-bold">Contact</h1>
                 <p className="flex gap-3 text-light-gray">
-                    <div> <FontAwesomeIcon icon={faLocationDot} style={{width:"20px", color:"green"}} /> </div>
+                    <div> <FontAwesomeIcon icon={faLocationDot} style={{width:"20px", color:"red"}} /> </div>
                     <div>Flat No-20, Nagaram, ECIL, Hyderabad</div>    
                 </p>
-                <p className="flex gap-1 text-light-gray">
-                    <FontAwesomeIcon icon={faAddressBook} style={{width:"20px", color:"green"}} />
-                    +91 9876543201
+                <p className="flex gap-3 text-light-gray">
+                    <FontAwesomeIcon icon={faAddressBook} style={{width:"23px", color:"rgba(24, 119, 242, 1)"}} />
+                    {/* +91 9876543201 */}
+                    <Link href={`tel:${9959068500}`}>9959068500</Link>
                 </p>
                 <p className="flex gap-3 text-light-gray ">
-                    <FontAwesomeIcon icon={faEnvelope} style={{width:"20px", color:"green"}} />
-                    <div className='flex flex-wrap'><p>rathriconstructions@gmail.com</p></div>
+                    <FontAwesomeIcon icon={faEnvelope} style={{width:"23px", color:"#d44638"}} />
+                    {/* <div className='flex flex-wrap'><p>rathriconstructions@gmail.com</p></div> */}
+                    <Link href="mailto:rathriconstructions@gmail.com">rathriconstructions@gmail.com</Link>
+                </p>
+                <p className="flex gap-3 text-light-gray ">
+                    <FontAwesomeIcon icon={faFacebook} style={{width:"23px", color:"rgba(24, 119, 242, 1)"}} />
+                    <Link href='https://www.facebook.com/rathirconstructions'>Facebook</Link>
+                </p>
+                <p className="flex gap-3 text-light-gray ">
+                    <FontAwesomeIcon icon={faInstagram} style={{width:"23px", color:"rgb(228, 64, 95)"}} />
+                    <Link href='https://www.instagram.com/rathri_constructions'>Instagram</Link>
+                </p>
+                <p className="flex gap-3 text-light-gray ">
+                    <FontAwesomeIcon icon={faYoutube} style={{width:"23px", color:"#c4302b"}} />
+                    <Link href='https://www.youtube.com/@RathriConstructions'>Youtube</Link>
                 </p>
             </div>
         </div>

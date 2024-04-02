@@ -13,7 +13,7 @@ export default function Home() {
       <div className={styles.background}>
         <div className="text-4xl text-white text-center">Welcome to Rathri constructions</div>  
       </div>      
-      <div className="flex justify-center -mt-32 outerDiv">
+      <div className="flex justify-center -mt-24 outerDiv">
         <div className="w-4/5">
           <div className="flex justify-center">
             <button className="w-24 h-10 border-r-2 border-slate-500 text-black text-xl rounded-t-sm hover:text-white transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Buy</button>
