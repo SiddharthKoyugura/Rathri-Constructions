@@ -1,3 +1,15 @@
 .services ul li:hover{
     color: green;
 }
+
+.open{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    top: 100px;
+}
+.close{
+    display:none;
+    font-size: larger;
+}
