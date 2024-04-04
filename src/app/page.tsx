@@ -13,24 +13,24 @@ export default function Home() {
       <div className={styles.background}>
         <div className="text-4xl text-white text-center">Welcome to Rathri constructions</div>  
       </div>      
-      <div className="flex justify-center -mt-32 outerDiv">
+      <div className="flex justify-center -mt-28 outerDiv">
         <div className="w-4/5">
           <div className="flex justify-center">
-            <button className="w-24 h-10 border-r-2 border-slate-500 text-black text-xl rounded-t-sm hover:text-white transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Buy</button>
-            <button className="w-24 h-10 rounded-t-sm hover:text-white text-black text-xl transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Rent</button>
+            <button className="w-24 h-10 border-r-2 border-slate-500 text-black text-xl rounded-t-md hover:text-white transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Buy</button>
+            <button className="w-24 h-10 rounded-t-sm hover:text-white text-black text-xl rounded-t-md transition ease-in-out delay-150 bg-white hover:bg-stone-800 duration-300 ...">Rent</button>
           </div>
 
           <div className=" flex gap-10 text-lg justify-between p-4 bg-white rounded-lg shadow-2xl sm:flex-col sm:gap-3">
             <div className="w-1/4 h-20 flex flex-col sm:w-full">
               <p>search property</p>
-              <div className="flex gap-3 px-2 items-center border-2 border-gray-300">
+              <div className="flex gap-3 px-2 items-center border-2 border-gray-300 rounded-md">
                 <FontAwesomeIcon icon={faMagnifyingGlass} style={{width:"20px", height:"20px", color:"gray"}} />
                 <input type="search" placeholder="search" className="h-10 flex shrink"/>
               </div>  
             </div>
             <div className="w-1/4 h-20 flex flex-col sm:w-full">
               <p>location</p>
-              <div className="flex gap-3 px-2 items-center border-2 border-gray-300 shrink">
+              <div className="flex gap-3 px-2 items-center border-2 border-gray-300 shrink rounded-md">
                 <FontAwesomeIcon icon={faCompass} style={{width:20, height:20, color:"gray"}} />
                 <select className="h-10 w-full flex shrink sm:w-full">
                   <option>input location</option>
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className="w-1/4 h-20 flex flex-col sm:w-full">
               <p>property type</p>
-              <select name="" id="" className="h-10 border-2 border-gray-300 flex shrink">
+              <select name="" id="" className="h-10 border-2 border-gray-300 flex shrink rounded-md">
                 <option>All types</option>
                 <option value="">Luxary</option>
                 <option value="">Classic</option>
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
 
             <div className="w-1/4 h-20 flex items-center gap-10 sm:w-full">
-              <button className="border border-gray-300 h-10 w-1/3 mt-4">Search</button>
+              <button className="border border-gray-300 h-10 w-1/3 mt-4 rounded-md">Search</button>
               <div>Advanced Search</div>
             </div>
           </div>
